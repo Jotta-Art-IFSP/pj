@@ -1,0 +1,21 @@
+.center {
+  text-align: center;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+:host {
+  ::ng-deep .p-card {
+    background-color: #A62446;
+    width: 400px;
+    height: 400px;
+    margin: 10px auto auto;
+  }
+}
+
+.mg-login {
+  margin-left: 70px;
+  margin-top: 70px;
+}

@@ -1,0 +1,32 @@
+<div class="card">
+  <p-toast></p-toast>
+</div>
+
+<div class="center">
+  <h1>Selecione uma data</h1>
+
+  <div class="mb-4">
+    <div class="inline-block mr-4">
+      <p-calendar [(ngModel)]="dataSolicitada" [showIcon]="true"></p-calendar>
+    </div>
+
+    <div *ngIf="dataSolicitada" class="inline-block">
+      <p-dropdown (onChange)="habilitarBotaoSolicitacao()" [options]="horasDisponiveis" [(ngModel)]="horaSelecionada"
+                  optionLabel="hora"></p-dropdown>
+    </div>
+  </div>
+
+
+  <div>
+    <p-button (onClick)="confirmarData()" [disabled]="isBotaoDesabilitado">Confimar Data</p-button>
+  </div>
+</div>
+
+<p-dialog header="Confirme a seguinte data" [(visible)]="showDialog" [modal]="true" [style]="{ width: '50vw' }"
+          [draggable]="false" [resizable]="false">
+  <p class="m-0 mb-4">
+    {{myFormattedDate}}
+  </p>
+
+  <p-button (onClick)="solicitarAgendamento()" [disabled]="isBotaoDesabilitado">Solicitar Agendamento</p-button>
+</p-dialog>
