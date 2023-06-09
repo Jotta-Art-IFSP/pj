@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {PaginaInicialComponent} from "./pagina-inicial.component";
+import {PaginaInicialComponent} from "./component/pagina-inicial.component";
 import {SidebarModule} from "primeng/sidebar";
 import {ButtonModule} from "primeng/button";
 import {SharedModule} from "primeng/api";

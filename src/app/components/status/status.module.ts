@@ -9,7 +9,7 @@ import {DropdownModule} from "primeng/dropdown";
 import {ToastModule} from "primeng/toast";
 import {StatusComponent} from "./component/status.component";
 import {StepsModule} from "primeng/steps";
-import {AppModule} from "../app.module";
+import {AppModule} from "../../app.module";
 
 @NgModule({
   declarations: [StatusComponent],

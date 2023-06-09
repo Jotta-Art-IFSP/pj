@@ -4,7 +4,7 @@ import {NgModule} from '@angular/core';
 const routes: Routes = [
   {
     path: '', loadChildren: () =>
-      import('./pagina-inicial/pagina-inicial.module').then(mod => mod.PaginaInicialModule)
+      import('./components/pagina-inicial/pagina-inicial.module').then(mod => mod.PaginaInicialModule)
   }
 ];
 

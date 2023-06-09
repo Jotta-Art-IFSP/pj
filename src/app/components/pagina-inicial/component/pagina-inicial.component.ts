@@ -1,14 +1,20 @@
-import {Component, OnInit} from '@angular/core';
-import * as $ from "jquery";
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import * as $ from 'jquery';
+import {CheckupService} from "../../../service/checkup.service";
+
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css', '../css/responsive.css', '../css/style.css', '../css/bootstrap.min.css', '../css/owl.carousel.css']
+  selector: 'app-pagina-inicial',
+  templateUrl: './pagina-inicial.component.html',
+  styleUrls: ['./pagina-inicial.component.css', '../../css/responsive.css', '../../css/style.css', '../../css/bootstrap.min.css', '../../css/owl.carousel.css']
 })
-export class LoginComponent implements OnInit{
+export class PaginaInicialComponent implements OnInit {
 
+  @ViewChild('elementoId', {static: true}) elemento: ElementRef | undefined;
   sidebarVisible: boolean = false;
+
+  constructor(private service: CheckupService) {
+  }
 
   ngOnInit(): void {
 
@@ -119,4 +125,8 @@ export class LoginComponent implements OnInit{
 
   }
 
+
+  navegarParaLogin() {
+    this.service.navegarParaLogin();
+  }
 }
