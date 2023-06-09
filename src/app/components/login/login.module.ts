@@ -1,7 +1,4 @@
 import {NgModule} from "@angular/core";
-import {CommonModule} from "@angular/common";
-import {BrowserModule} from "@angular/platform-browser";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {LoginRoutingModule} from "./login-routing.module";
 import {ButtonModule} from "primeng/button";
 import {CardModule} from "primeng/card";

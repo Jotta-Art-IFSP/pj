@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   <!-- site metas -->
-  <title>Entrar</title>
+  <title>Sobre nós</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -26,25 +26,16 @@
   <div class="loader"><img src="../../../../assets/images/loading.gif" alt=""/></div>
 </div>
 <!-- end loader -->
-<div id="mySidepanel" class="sidepanel">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="../../../../index.html">Inicio</a>
-  <a href="sobre.html">Sobre a plataforma</a>
-  <a href="servicos.html">Serviços e coberturas</a>
-  <a class="active" href="login.html">Entrar</a>
-  <a href="contato.html">Contato</a>
-
-  <div class="card flex justify-content-center sidepanel">
-    <p-sidebar [(visible)]="sidebarVisible">
-      <ng-template pTemplate="content">
-        <a routerLink="/pagina-inicial">Início</a>
-        <a routerLink="/sobre">Sobre a plataforma</a>
-        <a routerLink="/servicos">Serviços e coberturas</a>
-        <a class="active" routerLink="/login">Entrar</a>
-        <a routerLink="/contato">Contato</a>
-      </ng-template>
-    </p-sidebar>
-  </div>
+<div class="card flex justify-content-center sidepanel">
+  <p-sidebar [(visible)]="sidebarVisible">
+    <ng-template pTemplate="content">
+      <a routerLink="/pagina-inicial">Início</a>
+      <a class="active" routerLink="/sobre">Sobre a plataforma</a>
+      <a routerLink="/servicos">Serviços e coberturas</a>
+      <a routerLink="/login">Entrar</a>
+      <a routerLink="/contato">Contato</a>
+    </ng-template>
+  </p-sidebar>
 </div>
 <!-- header -->
 <header>
@@ -60,7 +51,7 @@
         <div class="col-sm-9">
           <ul class="email text_align_right">
             <li class="d_none"><a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i>
-              Login</a>
+              Entrar</a>
             </li>
             <li class="d_none"><a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i>
               Criar conta</a>
@@ -76,18 +67,28 @@
   </div>
 </header>
 <!-- end header -->
-<div class="our_mics">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10 offset-md-1">
-        <div class="titlepage text_align_center">
-          <h2>Login</h2>
-          <p>tela de login aqui</p>
+<!-- about -->
+<div id="about" class="about">
+  <div class="container-fluid">
+    <div class="row d_flex">
+      <div class="col-md-6">
+        <div class="titlepage text_align_left">
+          <h2>Sobre a plataforma</h2>
+          <p>Aqui na JJVW nosso objetivo é agilizar seu atendimento e simplificar toda a antiga burocracia para você.
+            Fazemos a intermediação do seu contato com sua seguradora ou empresa fornecedora de check-up, para isso é
+            necessário que você já tenha um plano ativo.</p>
+          <a class="read_more" href="about.html">Saiba Mais</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="about_img">
+          <figure><img class="img_responsive" src="../../../../assets/images/about_img.jpg" alt="#"/></figure>
         </div>
       </div>
     </div>
   </div>
 </div>
+<!-- end about -->
 <!-- footer -->
 <footer>
   <div class="footer">

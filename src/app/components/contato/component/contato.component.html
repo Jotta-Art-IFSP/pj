@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   <!-- site metas -->
-  <title>Entrar</title>
+  <title>Entre em contato</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -26,25 +26,16 @@
   <div class="loader"><img src="../../../../assets/images/loading.gif" alt=""/></div>
 </div>
 <!-- end loader -->
-<div id="mySidepanel" class="sidepanel">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="../../../../index.html">Inicio</a>
-  <a href="sobre.html">Sobre a plataforma</a>
-  <a href="servicos.html">Serviços e coberturas</a>
-  <a class="active" href="login.html">Entrar</a>
-  <a href="contato.html">Contato</a>
-
-  <div class="card flex justify-content-center sidepanel">
-    <p-sidebar [(visible)]="sidebarVisible">
-      <ng-template pTemplate="content">
-        <a routerLink="/pagina-inicial">Início</a>
-        <a routerLink="/sobre">Sobre a plataforma</a>
-        <a routerLink="/servicos">Serviços e coberturas</a>
-        <a class="active" routerLink="/login">Entrar</a>
-        <a routerLink="/contato">Contato</a>
-      </ng-template>
-    </p-sidebar>
-  </div>
+<div class="card flex justify-content-center sidepanel">
+  <p-sidebar [(visible)]="sidebarVisible">
+    <ng-template pTemplate="content">
+      <a routerLink="/pagina-inicial">Início</a>
+      <a routerLink="/sobre">Sobre a plataforma</a>
+      <a routerLink="/servicos">Serviços e coberturas</a>
+      <a routerLink="/login">Entrar</a>
+      <a class="active" routerLink="/contato">Contato</a>
+    </ng-template>
+  </p-sidebar>
 </div>
 <!-- header -->
 <header>
@@ -76,18 +67,42 @@
   </div>
 </header>
 <!-- end header -->
-<div class="our_mics">
+<!-- contact section -->
+<div class="contact left_cross_right">
   <div class="container">
     <div class="row">
-      <div class="col-md-10 offset-md-1">
-        <div class="titlepage text_align_center">
-          <h2>Login</h2>
-          <p>tela de login aqui</p>
+      <div class="col-md-12">
+        <div class="titlepage text_align_left">
+          <h2>Solicite um atendimento</h2>
+          <p>Ficou com alguma dúvida ou encontrou algum problema na plataforma? Sem problemas, solicite um contato e um
+            de nossos representantes irá te atender o mais breve possível :)</p>
         </div>
+      </div>
+      <div class="col-md-12">
+        <form id="request" class="main_form">
+          <div class="row">
+            <div class="col-md-12 ">
+              <input class="contactus" placeholder="Seu nome" type="type" name="Name">
+            </div>
+            <div class="col-md-6">
+              <input class="contactus" placeholder="E-mail" type="type" name="Email">
+            </div>
+            <div class="col-md-6">
+              <input class="contactus" placeholder="Celular" type="type" name="Phone Number">
+            </div>
+            <div class="col-md-12">
+              <textarea class="textarea" placeholder="Menssagem" type="Message"></textarea>
+            </div>
+            <div class="col-md-12">
+              <button class="send_btn">Solicitar atendimento</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 </div>
+<!-- end contact section -->
 <!-- footer -->
 <footer>
   <div class="footer">

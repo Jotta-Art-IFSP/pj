@@ -886,3 +886,16 @@ ul.social_icon li a:hover {
   padding: 0 !important;
   margin: 0 !important;
 }
+
+
+::ng-deep .p-button {
+  border: none !important;
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+::ng-deep .p-sidebar {
+  background-color: #8317CF !important;
+}
+
