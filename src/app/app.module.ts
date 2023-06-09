@@ -14,6 +14,8 @@ import localePT from '@angular/common/locales/pt';
 import {StepsModule} from "primeng/steps";
 import {ToastModule} from "primeng/toast";
 import {StatusModule} from "./status/status.module";
+import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.component';
+import {PaginaInicialModule} from "./pagina-inicial/pagina-inicial.module";
 
 
 registerLocaleData(localePT);
@@ -34,7 +36,8 @@ registerLocaleData(localePT);
     LoginModule,
     StepsModule,
     ToastModule,
-    StatusModule
+    StatusModule,
+    PaginaInicialModule
   ],
   providers: [],
   exports: [
