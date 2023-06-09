@@ -36,11 +36,12 @@
 
   <div class="card flex justify-content-center sidepanel">
     <p-sidebar [(visible)]="sidebarVisible">
-      <ng-template pTemplate="content"><a class="active" href="index.html">Inicio</a></ng-template>
-      <ng-template pTemplate="footer"><a href="sobre.html">Sobre a plataforma</a></ng-template>
-      <ng-template pTemplate="footer"><a href="servicos.html">Serviços e coberturas</a></ng-template>
-      <ng-template pTemplate="footer"><a href="login.html">Entrar</a></ng-template>
-      <ng-template pTemplate="footer"><a href="contato.html">Contato</a></ng-template>
+      <ng-template pTemplate="content">
+        <a routerLink="/pagina-inicial">Início</a>
+        <a routerLink="/sobre">Sobre a plataforma</a>
+        <a routerLink="/servicos">Serviços e coberturas</a>
+        <a class="active" routerLink="/login">Entrar</a>
+        <a routerLink="/contato">Contato</a></ng-template>
     </p-sidebar>
   </div>
 </div>

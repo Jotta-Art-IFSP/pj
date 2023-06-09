@@ -23,7 +23,7 @@
 <body class="main-layout">
 <!-- loader  -->
 <div class="loader_bg">
-  <div class="loader"><img src="../../assets/images/loading.gif" alt="" /></div>
+  <div class="loader"><img src="../../assets/images/loading.gif" alt=""/></div>
 </div>
 <!-- end loader -->
 <!--<div id="mySidepanel" class="sidepanel">-->
@@ -37,11 +37,12 @@
 
 <div class="card flex justify-content-center sidepanel">
   <p-sidebar [(visible)]="sidebarVisible">
-    <ng-template pTemplate="content"><a class="active" href="index.html">Inicio</a></ng-template>
-    <a (click)="navegarParaLogin()">Entrar</a>
-<!--    <ng-template pTemplate="footer"><a href="sobre.html">Sobre a plataforma</a></ng-template>-->
-<!--    <ng-template pTemplate="footer"><a href="servicos.html">Serviços e coberturas</a></ng-template>-->
-    <ng-template pTemplate="footer"><a href="contato.html">Contato</a></ng-template>
+    <ng-template pTemplate="content">
+      <a class="active" routerLink="/pagina-inicial">Início</a>
+      <a routerLink="/sobre">Sobre a plataforma</a>
+      <a routerLink="/servicos">Serviços e coberturas</a>
+      <a routerLink="/login">Entrar</a>
+      <a routerLink="/contato">Contato</a></ng-template>
   </p-sidebar>
 </div>
 <!-- header -->
@@ -52,18 +53,21 @@
       <div class="row d_flex">
         <div class="col-sm-3">
           <div class="logo">
-            <a href="index.html"><img src="../../assets/images/logo.png" /></a>
+            <a href="index.html"><img src="../../assets/images/logo.png"/></a>
           </div>
         </div>
         <div class="col-sm-9">
           <ul class="email text_align_right">
-            <li class="d_none"> <a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i>
+            <li class="d_none"><a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i>
               Entrar</a>
             </li>
-            <li class="d_none"> <a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i>
+            <li class="d_none"><a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i>
               Criar conta</a>
             </li>
-            <li> <p-button class="custom-button" (click)="sidebarVisible = true"><img src="../../assets/images/menu_btn.png"></p-button></li>
+            <li>
+              <p-button class="custom-button" (click)="sidebarVisible = true"><img
+                src="../../assets/images/menu_btn.png"></p-button>
+            </li>
           </ul>
         </div>
       </div>
@@ -78,7 +82,8 @@
       <div class="col-md-6">
         <div class="airmic">
           <h1>Nome da plataforma</h1>
-          <p>Que tal agilizar o agendamento de suas consultas e/ou exames? Esqueça longas ligações e tarifas, estamos aqui para te auxiliar, clique no botão abaixo e vamos lá!
+          <p>Que tal agilizar o agendamento de suas consultas e/ou exames? Esqueça longas ligações e tarifas, estamos
+            aqui para te auxiliar, clique no botão abaixo e vamos lá!
           </p>
           <a class="read_more" href="Javascript:void(0)">Agendar agora</a>
         </div>
@@ -99,7 +104,8 @@
       <div class="col-md-12">
         <div class="titlepage text_align_center">
           <h2>Serviços e coberturas</h2>
-          <p>Conte com nosso suporte para atender todas as coberturas oferecidas pelo seu plano, desde agendamento de consultas até acompanhamento de exames, tudo em um só lugar. Simples e rápido!
+          <p>Conte com nosso suporte para atender todas as coberturas oferecidas pelo seu plano, desde agendamento de
+            consultas até acompanhamento de exames, tudo em um só lugar. Simples e rápido!
         </div>
       </div>
       <div class="row">
@@ -127,7 +133,8 @@
           </div>
           <div class="service_text text_align_center">
             <h3>Consultar coberturas</h3>
-            <p>Não tem certeza de todas as coberturas oferecidas pelo seu plano? Aqui você tira todas suas dúvidas, venha conferir!</p>
+            <p>Não tem certeza de todas as coberturas oferecidas pelo seu plano? Aqui você tira todas suas dúvidas,
+              venha conferir!</p>
           </div>
         </div>
       </div>
@@ -141,7 +148,9 @@
         <div class="col-md-6">
           <div class="titlepage text_align_left">
             <h2>Sobre a plataforma</h2>
-            <p>Aqui na JJVW nosso objetivo é agilizar seu atendimento e simplificar toda a antiga burocracia para você. Fazemos a intermediação do seu contato com sua seguradora ou empresa fornecedora de check-up, para isso é necessário que você já tenha um plano ativo.</p>
+            <p>Aqui na JJVW nosso objetivo é agilizar seu atendimento e simplificar toda a antiga burocracia para você.
+              Fazemos a intermediação do seu contato com sua seguradora ou empresa fornecedora de check-up, para isso é
+              necessário que você já tenha um plano ativo.</p>
             <a class="read_more" href="about.html">Saiba Mais</a>
           </div>
         </div>
@@ -161,7 +170,8 @@
         <div class="col-md-10 offset-md-1">
           <div class="titlepage text_align_center">
             <h2>Seguradoras atendidas</h2>
-            <p>Confira todas as seguradoras que atendemos no momento, caso encontre a sua na lista não exite em entrar em contato com a gente :) será um prazer te atender</p>
+            <p>Confira todas as seguradoras que atendemos no momento, caso encontre a sua na lista não exite em entrar
+              em contato com a gente :) será um prazer te atender</p>
           </div>
         </div>
       </div>
@@ -305,7 +315,8 @@
         <div class="col-md-12">
           <div class="titlepage text_align_left">
             <h2>Solicite um atendimento</h2>
-            <p>Ficou com alguma dúvida ou encontrou algum problema na plataforma? Sem problemas, solicite um contato e um de nossos representantes irá te atender o mais breve possível :)</p>
+            <p>Ficou com alguma dúvida ou encontrou algum problema na plataforma? Sem problemas, solicite um contato e
+              um de nossos representantes irá te atender o mais breve possível :)</p>
           </div>
         </div>
         <div class="col-md-12">
@@ -344,9 +355,9 @@
           <div class="col-md-4">
             <h3 style="color: azure;">Nos siga nas redes sociais</h3>
             <ul class="social_icon text_align_center">
-              <li> <a href="Javascript:void(0)"><i class="fa fa-facebook-f"></i></a></li>
-              <li> <a href="Javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-              <li> <a href="Javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="Javascript:void(0)"><i class="fa fa-facebook-f"></i></a></li>
+              <li><a href="Javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="Javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
             </ul>
           </div>
         </div>
@@ -367,7 +378,7 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/jquery-3.0.0.min.js"></script>
-<!--  <script src="js/custom.js"></script>-->
+  <!--  <script src="js/custom.js"></script>-->
 </div>
 </body>
 </html>
