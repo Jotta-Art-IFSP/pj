@@ -1,10 +1,11 @@
-import { RouterModule, Routes } from '@angular/router';
-import { NgModule } from '@angular/core';
-import {PaginaInicialComponent} from "./pagina-inicial/pagina-inicial.component";
+import {RouterModule, Routes} from '@angular/router';
+import {NgModule} from '@angular/core';
 
 const routes: Routes = [
-  { path: '', component: PaginaInicialComponent },
-  // outras rotas do seu aplicativo
+  {
+    path: '', loadChildren: () =>
+      import('./pagina-inicial/pagina-inicial.module').then(mod => mod.PaginaInicialModule)
+  }
 ];
 
 @NgModule({

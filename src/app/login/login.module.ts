@@ -15,16 +15,13 @@ import {SidebarModule} from "primeng/sidebar";
     LoginComponent
   ],
   imports: [
-    CommonModule,
-    BrowserModule,
-    BrowserAnimationsModule,
     LoginRoutingModule,
     ButtonModule,
     CardModule,
     FormsModule,
     ChipsModule,
     ReactiveFormsModule,
-    SidebarModule
+    SidebarModule,
   ],
   exports: [
     LoginComponent

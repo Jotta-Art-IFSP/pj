@@ -1,5 +1,6 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import * as $ from 'jquery';
+import {CheckupService} from "../service/checkup.service";
 
 
 @Component({
@@ -12,7 +13,8 @@ export class PaginaInicialComponent implements OnInit {
   @ViewChild('elementoId', {static: true}) elemento: ElementRef | undefined;
   sidebarVisible: boolean = false;
 
-
+  constructor(private service: CheckupService) {
+  }
 
   ngOnInit(): void {
 
@@ -124,4 +126,7 @@ export class PaginaInicialComponent implements OnInit {
   }
 
 
+  navegarParaLogin() {
+    this.service.navegarParaLogin();
+  }
 }
