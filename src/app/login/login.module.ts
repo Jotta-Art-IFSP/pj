@@ -1,5 +1,4 @@
 import {NgModule} from "@angular/core";
-import {LoginComponent} from "./component/login.component";
 import {CommonModule} from "@angular/common";
 import {BrowserModule} from "@angular/platform-browser";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
@@ -8,22 +7,25 @@ import {ButtonModule} from "primeng/button";
 import {CardModule} from "primeng/card";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {ChipsModule} from "primeng/chips";
+import {LoginComponent} from "./login.component";
+import {SidebarModule} from "primeng/sidebar";
 
 @NgModule({
   declarations: [
     LoginComponent
   ],
-    imports: [
-        CommonModule,
-        BrowserModule,
-        BrowserAnimationsModule,
-        LoginRoutingModule,
-        ButtonModule,
-        CardModule,
-        FormsModule,
-        ChipsModule,
-        ReactiveFormsModule
-    ],
+  imports: [
+    CommonModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    LoginRoutingModule,
+    ButtonModule,
+    CardModule,
+    FormsModule,
+    ChipsModule,
+    ReactiveFormsModule,
+    SidebarModule
+  ],
   exports: [
     LoginComponent
   ]

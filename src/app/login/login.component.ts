@@ -1,18 +1,14 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
-import * as $ from 'jquery';
-
+import {Component, OnInit} from '@angular/core';
+import * as $ from "jquery";
 
 @Component({
-  selector: 'app-pagina-inicial',
-  templateUrl: './pagina-inicial.component.html',
-  styleUrls: ['./pagina-inicial.component.css', '../css/responsive.css', '../css/style.css', '../css/bootstrap.min.css', '../css/owl.carousel.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css', '../css/responsive.css', '../css/style.css', '../css/bootstrap.min.css', '../css/owl.carousel.css']
 })
-export class PaginaInicialComponent implements OnInit {
+export class LoginComponent implements OnInit{
 
-  @ViewChild('elementoId', {static: true}) elemento: ElementRef | undefined;
   sidebarVisible: boolean = false;
-
-
 
   ngOnInit(): void {
 
@@ -122,6 +118,5 @@ export class PaginaInicialComponent implements OnInit {
     });
 
   }
-
 
 }
