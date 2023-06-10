@@ -873,22 +873,8 @@ ul.social_icon li a:hover {
      margin-top: 110px;
 }
 
-.custom-button {
-  border: none !important;
-  background: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
 
-:host ::ng-deep p-ripple p-element p-button p-component{
-  border: none !important;
-  background: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-
-::ng-deep .p-button {
+::ng-deep .nav-btn {
   border: none !important;
   background: none !important;
   padding: 0 !important;
