@@ -7,10 +7,11 @@ import {DropdownModule} from "primeng/dropdown";
 import {ToastModule} from "primeng/toast";
 import {StatusComponent} from "./component/status.component";
 import {StepsModule} from "primeng/steps";
+import {SidebarModule} from "primeng/sidebar";
 
 @NgModule({
   declarations: [StatusComponent],
-  imports: [StatusRoutingModule, CalendarModule, FormsModule, DialogModule, DropdownModule, ToastModule, StepsModule],
+  imports: [StatusRoutingModule, CalendarModule, FormsModule, DialogModule, DropdownModule, ToastModule, StepsModule, SidebarModule],
   exports: [StatusComponent],
 })
 export class StatusModule {
