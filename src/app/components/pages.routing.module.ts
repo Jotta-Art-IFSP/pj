@@ -21,6 +21,14 @@ const routes: Routes = [
     {
         path: 'contato', loadChildren: () =>
             import('./contato/contato.module').then(mod => mod.ContatoModule)
+    },
+    {
+        path: 'status', loadChildren: () =>
+            import('./status/status.module').then(mod => mod.StatusModule)
+    },
+    {
+        path: 'solicitacao', loadChildren: () =>
+            import('./solicitacao/solicitacao.module').then(mod => mod.SolicitacaoModule)
     }
 ];
 
