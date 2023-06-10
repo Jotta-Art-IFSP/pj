@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import * as $ from "jquery";
 
 @Component({
@@ -6,7 +6,7 @@ import * as $ from "jquery";
   templateUrl: './sobre.component.html',
   styleUrls: ['./sobre.component.css', '../../css/responsive.css', '../../css/style.css', '../../css/bootstrap.min.css', '../../css/owl.carousel.css']
 })
-export class SobreComponent {
+export class SobreComponent implements OnInit{
   sidebarVisible: boolean = false;
 
   ngOnInit(): void {
