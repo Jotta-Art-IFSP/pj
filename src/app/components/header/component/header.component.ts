@@ -8,5 +8,6 @@ import {Component, Input} from '@angular/core';
 export class HeaderComponent {
   sidebarVisible: boolean = false;
   @Input() isInnerPage = false;
+  @Input() nav: string = '';
 
 }

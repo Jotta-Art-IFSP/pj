@@ -1,13 +1,13 @@
 <div class="card flex justify-content-center sidepanel">
   <p-sidebar [(visible)]="sidebarVisible">
     <ng-template pTemplate="content">
-      <a class="active" routerLink="/pagina-inicial">Início</a>
-      <a routerLink="/sobre">Sobre a plataforma</a>
-      <a routerLink="/servicos">Serviços e coberturas</a>
-      <a routerLink="/login">Entrar</a>
-      <a routerLink="/solicitacao">Solicitar Agendamento</a>
-      <a routerLink="/status">Status do Agendamento</a>
-      <a routerLink="/contato">Contato</a></ng-template>
+      <a [ngClass]="nav === 'pagina-inicial' ? 'active' : ''" routerLink="/pagina-inicial">Início</a>
+      <a [ngClass]="nav === 'sobre' ? 'active' : ''" routerLink="/sobre">Sobre a plataforma</a>
+      <a [ngClass]="nav === 'servicos' ? 'active' : ''" routerLink="/servicos">Serviços e coberturas</a>
+      <a [ngClass]="nav === 'login' ? 'active' : ''" routerLink="/login">Entrar</a>
+      <a [ngClass]="nav === 'solicitacao' ? 'active' : ''" routerLink="/solicitacao">Solicitar Agendamento</a>
+      <a [ngClass]="nav === 'status' ? 'active' : ''" routerLink="/status">Status do Agendamento</a>
+      <a [ngClass]="nav === 'contato' ? 'active' : ''" routerLink="/contato">Contato</a></ng-template>
   </p-sidebar>
 </div>
 <!-- header -->
