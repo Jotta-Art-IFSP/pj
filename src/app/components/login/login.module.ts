@@ -6,20 +6,22 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {ChipsModule} from "primeng/chips";
 import {LoginComponent} from "./component/login.component";
 import {SidebarModule} from "primeng/sidebar";
+import {HeaderModule} from "../header/header.module";
 
 @NgModule({
   declarations: [
     LoginComponent
   ],
-  imports: [
-    LoginRoutingModule,
-    ButtonModule,
-    CardModule,
-    FormsModule,
-    ChipsModule,
-    ReactiveFormsModule,
-    SidebarModule,
-  ],
+    imports: [
+        LoginRoutingModule,
+        ButtonModule,
+        CardModule,
+        FormsModule,
+        ChipsModule,
+        ReactiveFormsModule,
+        SidebarModule,
+        HeaderModule,
+    ],
   exports: [
     LoginComponent
   ]

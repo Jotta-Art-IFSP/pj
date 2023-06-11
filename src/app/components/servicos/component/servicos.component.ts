@@ -7,8 +7,6 @@ import * as $ from "jquery";
   styleUrls: ['./servicos.component.css', '../../css/responsive.css', '../../css/style.css', '../../css/bootstrap.min.css', '../../css/owl.carousel.css']
 })
 export class ServicosComponent {
-  sidebarVisible: boolean = false;
-
   ngOnInit(): void {
 
     /*---------------------------------------------------------------------

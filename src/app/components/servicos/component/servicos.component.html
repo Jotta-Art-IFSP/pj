@@ -26,48 +26,9 @@
   <div class="loader"><img src="../../../../assets/images/loading.gif" alt=""/></div>
 </div>
 <!-- end loader -->
-<div class="card flex justify-content-center sidepanel">
-  <p-sidebar [(visible)]="sidebarVisible">
-    <ng-template pTemplate="content">
-      <a routerLink="/pagina-inicial">Início</a>
-      <a routerLink="/sobre">Sobre a plataforma</a>
-      <a class="active" routerLink="/servicos">Serviços e coberturas</a>
-      <a routerLink="/login">Entrar</a>
-      <a routerLink="/solicitacao">Solicitar Agendamento</a>
-      <a routerLink="/status">Status do Agendamento</a>
-      <a routerLink="/contato">Contato</a>
-    </ng-template>
-  </p-sidebar>
-</div>
-<!-- header -->
-<header>
-  <!-- header inner -->
-  <div class="head-top">
-    <div class="container-fluid">
-      <div class="row d_flex">
-        <div class="col-sm-3">
-          <div class="logo">
-            <a href="../../../../index.html"><img src="../../../../assets/images/logo.png"/></a>
-          </div>
-        </div>
-        <div class="col-sm-9">
-          <ul class="email text_align_right">
-            <li class="d_none"><a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i>
-              Login</a>
-            </li>
-            <li class="d_none"><a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i>
-              Criar conta</a>
-            </li>
-            <li>
-              <button class="nav-btn" (click)="sidebarVisible = true"><img
-                src="../../../../assets/images/menu_btn.png"></button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+
+<app-header [isInnerPage]="true"></app-header>
+
 <!-- end header -->
 <!-- services -->
 <div class="services">

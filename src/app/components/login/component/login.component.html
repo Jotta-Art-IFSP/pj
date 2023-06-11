@@ -26,57 +26,9 @@
   <div class="loader"><img src="../../../../assets/images/loading.gif" alt=""/></div>
 </div>
 <!-- end loader -->
-<div id="mySidepanel" class="sidepanel">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="../../../../index.html">Inicio</a>
-  <a href="sobre.html">Sobre a plataforma</a>
-  <a href="servicos.html">Serviços e coberturas</a>
-  <a class="active" href="login.html">Entrar</a>
-  <a href="contato.html">Contato</a>
 
-  <div class="card flex justify-content-center sidepanel">
-    <p-sidebar [(visible)]="sidebarVisible">
-      <ng-template pTemplate="content">
-        <a routerLink="/pagina-inicial">Início</a>
-        <a routerLink="/sobre">Sobre a plataforma</a>
-        <a routerLink="/servicos">Serviços e coberturas</a>
-        <a class="active" routerLink="/login">Entrar</a>
-        <a routerLink="/solicitacao">Solicitar Agendamento</a>
-        <a routerLink="/status">Status do Agendamento</a>
-        <a routerLink="/contato">Contato</a>
-      </ng-template>
-    </p-sidebar>
-  </div>
-</div>
-<!-- header -->
-<header>
-  <!-- header inner -->
-  <div class="head-top">
-    <div class="container-fluid">
-      <div class="row d_flex">
-        <div class="col-sm-3">
-          <div class="logo">
-            <a href="../../../../index.html"><img src="../../../../assets/images/logo.png"/></a>
-          </div>
-        </div>
-        <div class="col-sm-9">
-          <ul class="email text_align_right">
-            <li class="d_none"><a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i>
-              Login</a>
-            </li>
-            <li class="d_none"><a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i>
-              Criar conta</a>
-            </li>
-            <li>
-              <button class="nav-btn" (click)="sidebarVisible = true"><img
-                src="../../../../assets/images/menu_btn.png"></button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+<app-header [isInnerPage]="true"></app-header>
+
 <!-- end header -->
 <div class="our_mics">
   <div class="container">

@@ -22,8 +22,6 @@ export class SolicitacaoComponent implements OnInit {
   horaSelecionada: any;
   isBotaoDesabilitado = true;
   myFormattedDate: string | null = '';
-  sidebarVisible: boolean = false;
-
   constructor(private messageService: MessageService) {
   }
 
