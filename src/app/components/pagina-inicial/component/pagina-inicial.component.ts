@@ -123,9 +123,4 @@ export class PaginaInicialComponent implements OnInit {
     });
 
   }
-
-
-  navegarParaLogin() {
-    this.service.navegarParaLogin();
-  }
 }
