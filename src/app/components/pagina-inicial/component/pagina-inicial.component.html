@@ -25,48 +25,9 @@
 <div class="loader_bg">
   <div class="loader"><img src="../../../../assets/images/loading.gif" alt=""/></div>
 </div>
-<div class="card flex justify-content-center sidepanel">
-  <p-sidebar [(visible)]="sidebarVisible">
-    <ng-template pTemplate="content">
-      <a class="active" routerLink="/pagina-inicial">Início</a>
-      <a routerLink="/sobre">Sobre a plataforma</a>
-      <a routerLink="/servicos">Serviços e coberturas</a>
-      <a routerLink="/login">Entrar</a>
-      <a routerLink="/solicitacao">Solicitar Agendamento</a>
-      <a routerLink="/status">Status do Agendamento</a>
-      <a routerLink="/contato">Contato</a></ng-template>
-  </p-sidebar>
-</div>
-<!-- header -->
-<header>
-  <!-- header inner -->
-  <div class="head-top">
-    <div class="container-fluid">
-      <div class="row d_flex">
-        <div class="col-sm-3">
-          <div class="logo">
-            <a href="../../../../index.html"><img src="../../../../assets/images/logo.png"/></a>
-          </div>
-        </div>
-        <div class="col-sm-9">
-          <ul class="email text_align_right">
-            <li class="d_none"><a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i>
-              Entrar</a>
-            </li>
-            <li class="d_none"><a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i>
-              Criar conta</a>
-            </li>
-            <li>
-              <button class="nav-btn" (click)="sidebarVisible = true"><img
-                src="../../../../assets/images/menu_btn.png"></button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-<!-- end header -->
+
+<app-header></app-header>
+
 <!-- start slider section -->
 <div id="top_section" class=" banner_main">
   <div class="container">
@@ -169,7 +130,7 @@
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-6 margin_bottom40">
-          <div id="ho_show" class="mics">
+          <div class="mics ho_show">
             <figure><img class="img_responsive" src="../../../../assets/images/seg1.png" alt="#"/></figure>
             <div class="mics_icon">
               <a href="javascript:void(0)">
@@ -179,7 +140,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-6 margin_bottom40">
-          <div id="ho_show" class="mics">
+          <div class="mics ho_show">
             <figure><img class="img_responsive" src="../../../../assets/images/seg2.png" alt="#"/></figure>
             <div class="mics_icon">
               <a href="javascript:void(0)">
@@ -189,7 +150,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-6 margin_bottom40">
-          <div id="ho_show" class="mics">
+          <div class="mics ho_show">
             <figure><img class="img_responsive" src="../../../../assets/images/seg3.png" alt="#"/></figure>
             <div class="mics_icon">
               <a href="javascript:void(0)">
@@ -199,7 +160,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-6 margin_bottom40">
-          <div id="ho_show" class="mics">
+          <div class="mics ho_show">
             <figure><img class="img_responsive" src="../../../../assets/images/seg4.png" alt="#"/></figure>
             <div class="mics_icon">
               <a href="javascript:void(0)">
@@ -209,7 +170,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-6 margin_bottom40">
-          <div id="ho_show" class="mics">
+          <div class="mics ho_show">
             <figure><img class="img_responsive" src="../../../../assets/images/seg5.png" alt="#"/></figure>
             <div class="mics_icon">
               <a href="javascript:void(0)">
@@ -219,7 +180,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-6 margin_bottom40">
-          <div id="ho_show" class="mics">
+          <div class="mics ho_show">
             <figure><img class="img_responsive" src="../../../../assets/images/seg6.png" alt="#"/></figure>
             <div class="mics_icon">
               <a href="javascript:void(0)">

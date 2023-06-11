@@ -11,7 +11,6 @@ import {CheckupService} from "../../../service/checkup.service";
 export class PaginaInicialComponent implements OnInit {
 
   @ViewChild('elementoId', {static: true}) elemento: ElementRef | undefined;
-  sidebarVisible: boolean = false;
 
   constructor(private service: CheckupService) {
   }

@@ -8,6 +8,7 @@ import {PaginaInicialModule} from "./components/pagina-inicial/pagina-inicial.mo
 import {BrowserModule} from "@angular/platform-browser";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {PagesModule} from "./components/pages.module";
+import {SidebarModule} from "primeng/sidebar";
 
 
 registerLocaleData(localePT);
@@ -23,10 +24,12 @@ registerLocaleData(localePT);
     BrowserAnimationsModule,
     AppRoutingModule,
     PaginaInicialModule,
-    PagesModule
+    PagesModule,
+    SidebarModule
   ],
   providers: [],
-  exports: [],
+  exports: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
