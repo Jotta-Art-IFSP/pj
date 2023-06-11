@@ -10,10 +10,11 @@ import {StepsModule} from "primeng/steps";
 import {SidebarModule} from "primeng/sidebar";
 import {NgClass} from "@angular/common";
 import {HeaderModule} from "../header/header.module";
+import {FooterModule} from "../footer/footer.module";
 
 @NgModule({
   declarations: [StatusComponent],
-    imports: [StatusRoutingModule, CalendarModule, FormsModule, DialogModule, DropdownModule, ToastModule, StepsModule, SidebarModule, NgClass, HeaderModule],
+  imports: [StatusRoutingModule, CalendarModule, FormsModule, DialogModule, DropdownModule, ToastModule, StepsModule, SidebarModule, NgClass, HeaderModule, FooterModule],
   exports: [StatusComponent],
 })
 export class StatusModule {

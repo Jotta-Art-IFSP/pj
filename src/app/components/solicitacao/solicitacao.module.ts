@@ -11,10 +11,11 @@ import {SidebarModule} from "primeng/sidebar";
 import {NgIf} from "@angular/common";
 import {ButtonModule} from "primeng/button";
 import {HeaderModule} from "../header/header.module";
+import {FooterModule} from "../footer/footer.module";
 
 @NgModule({
   declarations: [SolicitacaoComponent, CustomDatePipe],
-    imports: [SolicitacaoRoutingModule, CalendarModule, FormsModule, DialogModule, DropdownModule, ToastModule, SidebarModule, NgIf, ButtonModule, HeaderModule],
+  imports: [SolicitacaoRoutingModule, CalendarModule, FormsModule, DialogModule, DropdownModule, ToastModule, SidebarModule, NgIf, ButtonModule, HeaderModule, FooterModule],
   exports: [SolicitacaoComponent, CustomDatePipe],
 })
 export class SolicitacaoModule {}
