@@ -13,6 +13,10 @@ export class StatusComponent implements OnInit {
   activeIndex: any;
   order: any;
   sidebarVisible: boolean = false;
+  isStatusPrimeiro = true;
+  isStatusSegundo = false;
+  isStatusTerceiro = false;
+  isStatusQuarto = false;
 
   ngOnInit() {
     this.order = {
